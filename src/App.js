@@ -8,6 +8,7 @@ import Tour from './Screens/Tours'
 import About from './Screens/About'
 import Contact from './Screens/Contact'
 import Checkout from './Screens/Checkout'
+import Payment from './Screens/Payment'
 import Page404 from './Components/404'
 
 
@@ -30,6 +31,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/checkout" element={<Checkout />} />
+        <Route path="/payment" element={<Payment />} />
         <Route path="/tour" 
           element={
           <Tour 

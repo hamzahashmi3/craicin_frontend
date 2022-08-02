@@ -71,11 +71,17 @@ nav{
   background: url('./Assets/images/map-bg.jpg');
   background-position: center;
   background-size: cover;
-
 }
 
 .bg-checkout-img{
   background: url('./Assets/images/img3.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg-payment-img{
+  background: url('./Assets/images/payments_bg.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

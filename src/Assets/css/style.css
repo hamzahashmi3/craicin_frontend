@@ -112,3 +112,19 @@
   }
 
   /* 404 Page css ends here */
+
+
+
+#line-between {
+    display: flex;
+    flex-direction: row;
+}
+  
+#line-between:before,
+#line-between:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 2px solid #ddd;
+    margin: auto;
+}
+  
