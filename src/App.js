@@ -7,7 +7,7 @@ import Home from './Screens/Home'
 import Tour from './Screens/Tours'
 import About from './Screens/About'
 import Contact from './Screens/Contact'
-import Checkout from './Components/Checkout'
+import Checkout from './Screens/Checkout'
 import Page404 from './Components/404'
 
 
