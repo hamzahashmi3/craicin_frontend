@@ -22,29 +22,29 @@ const Checkout = () => {
             <Col md={8}>
 
               <form>
-                <div class="row mb-3">
-                  <div class="col">
+                <div className="row mb-3">
+                  <div className="col">
                     <label>First Name</label>
-                    <input type="text" class="form-control" />
+                    <input type="text" className="form-control" />
                   </div>
-                  <div class="col">
+                  <div className="col">
                     <label>Last Name</label>
-                    <input type="text" class="form-control" />
+                    <input type="text" className="form-control" />
                   </div>
                 </div>
-                <div class="row mb-3">
-                  <div class="col">
+                <div className="row mb-3">
+                  <div className="col">
                     <label>Email</label>
-                    <input type="text" class="form-control" />
+                    <input type="text" className="form-control" />
                   </div>
-                  <div class="col">
+                  <div className="col">
                     <label>Confirm Email</label>
-                    <input type="text" class="form-control" />
+                    <input type="text" className="form-control" />
                   </div>
                 </div>
-                <div class="form-group">
+                <div className="form-group">
                   <label>Country</label>
-                  <select class="custom-select" id="country" name="country">
+                  <select className="custom-select" id="country" name="country">
                     <option>select country</option>
                     <option value="AF">Afghanistan</option>
                     <option value="AX">Aland Islands</option>
@@ -301,9 +301,9 @@ const Checkout = () => {
                   </select>
                 </div>
 
-                <div class="form-group">
+                <div className="form-group">
                   <label for="formGroupExampleInput">Phone</label>
-                  <input type="tel" class="form-control" id="formGroupExampleInput" /> 
+                  <input type="tel" className="form-control" id="formGroupExampleInput" /> 
                 </div>
 
                 <hr className=' my-4' />
@@ -311,64 +311,64 @@ const Checkout = () => {
                 <h3 className='fw-light text-muted'>Passenger Details</h3>
                 
                 <h4 className='mt-3 text-muted'>Adults</h4>
-                <div class="row mb-3">
-                  <div class="col">
+                <div className="row mb-3">
+                  <div className="col">
                     <label>First Name</label>
-                    <input type="text" class="form-control" />
+                    <input type="text" className="form-control" />
                   </div>
-                  <div class="col">
+                  <div className="col">
                     <label>Last Name</label>
-                    <input type="text" class="form-control" />
+                    <input type="text" className="form-control" />
                   </div>
                 </div>
-                <div class="row mb-3">
-                  <div class="col">
+                <div className="row mb-3">
+                  <div className="col">
                     <label>First Name</label>
-                    <input type="text" class="form-control" />
+                    <input type="text" className="form-control" />
                   </div>
-                  <div class="col">
+                  <div className="col">
                     <label>Last Name</label>
-                    <input type="text" class="form-control" />
+                    <input type="text" className="form-control" />
                   </div>
                 </div>
 
                 <h4 className='mt-3 text-muted'>Students</h4>
-                <div class="row mb-3">
-                  <div class="col">
+                <div className="row mb-3">
+                  <div className="col">
                     <label>First Name</label>
-                    <input type="text" class="form-control" />
+                    <input type="text" className="form-control" />
                   </div>
-                  <div class="col">
+                  <div className="col">
                     <label>Last Name</label>
-                    <input type="text" class="form-control" />
+                    <input type="text" className="form-control" />
                   </div>
                 </div>
 
                 <h4 className='mt-3 text-muted'>Seniors</h4>
-                <div class="row mb-3">
-                  <div class="col">
+                <div className="row mb-3">
+                  <div className="col">
                     <label>First Name</label>
-                    <input type="text" class="form-control" />
+                    <input type="text" className="form-control" />
                   </div>
-                  <div class="col">
+                  <div className="col">
                     <label>Last Name</label>
-                    <input type="text" class="form-control" />
+                    <input type="text" className="form-control" />
                   </div>
                 </div>
                 
                 <h4 className='mt-3 text-muted'>Childrens</h4>
-                <div class="row mb-3">
-                  <div class="col">
+                <div className="row mb-3">
+                  <div className="col">
                     <label>First Name</label>
-                    <input type="text" class="form-control" />
+                    <input type="text" className="form-control" />
                   </div>
-                  <div class="col">
+                  <div className="col">
                     <label>Last Name</label>
-                    <input type="text" class="form-control" />
+                    <input type="text" className="form-control" />
                   </div>
-                  <div class="col">
+                  <div className="col">
                     <label>Age</label>
-                    <select class="custom-select" id="inputGroupSelect01">
+                    <select className="custom-select" id="inputGroupSelect01">
                       <option selected>Choose...</option>
                       <option value="1">5</option>
                       <option value="2">6</option>
@@ -384,18 +384,18 @@ const Checkout = () => {
                     </select>
                   </div>
                 </div>
-                <div class="row mb-3">
-                  <div class="col">
+                <div className="row mb-3">
+                  <div className="col">
                     <label>First Name</label>
-                    <input type="text" class="form-control" />
+                    <input type="text" className="form-control" />
                   </div>
-                  <div class="col">
+                  <div className="col">
                     <label>Last Name</label>
-                    <input type="text" class="form-control" />
+                    <input type="text" className="form-control" />
                   </div>
-                  <div class="col">
+                  <div className="col">
                     <label>Age</label>
-                    <select class="custom-select" id="inputGroupSelect01">
+                    <select className="custom-select" id="inputGroupSelect01">
                       <option selected>Choose...</option>
                       <option value="1">5</option>
                       <option value="2">6</option>
@@ -414,20 +414,20 @@ const Checkout = () => {
 
                 <hr className='my-4' />
 
-                <label class="form-check-label" for="exampleCheck1">
+                <label className="form-check-label" for="exampleCheck1">
                   Please let us know if you have a wheelchair, mobility requirements, dietary needs, 
                   or whether your friend booked a tour separately from you.
                 </label>
                 <textarea row="5" className='form-control mt-2 mb-4'></textarea>
-                <div class="form-group form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-                  <label class="form-check-label" for="exampleCheck1">
+                <div className="form-group form-check">
+                  <input type="checkbox" className="form-check-input" id="exampleCheck1" />
+                  <label className="form-check-label" for="exampleCheck1">
                     Yes, I'd like to receive marketing communications and emails with travel tips and
                     updates. I know I can unsubscribe easily at any time. <Link to="#">Privacy Policy.</Link>
                   </label>
                 </div>
 
-                <button type="submit" class="btn btn-outline-success btn-lg my-4">Continue to review & pay</button>
+                <button type="submit" className="btn btn-outline-success btn-lg my-4">Continue to review & pay</button>
               </form>
             </Col>
             <Col md={4}>
