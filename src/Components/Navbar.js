@@ -35,9 +35,7 @@ import {EdinburghOneDayNav,
 import {
   Row,
   Col,
-  Navbar,
-  NavDropdown,
-  Nav,
+  
   Dropdown,
   DropdownButton,
   ButtonGroup,
@@ -79,6 +77,21 @@ const Menu = () => {
   return (
 
     <div>
+       <style type="text/css">
+        {`
+        .btn-flat {
+          background-color: transparent;
+          color: white;
+          border-left: 1px solid white;
+          border-right: 1px solid white;
+        }
+
+        .btn-xxl {
+          padding: 1rem 1.5rem;
+          font-size: 1.5rem;
+        }
+        `}
+      </style>
       <TopNavBar show={alertShow} setShow={setAlertShow} />
 
       <nav
@@ -119,9 +132,9 @@ const Menu = () => {
                       key={direction}
                       id={`dropdown-button-drop-${direction}`}
                       drop={direction}
-                      variant="light"
+                      variant="flat"
                       title={` Tour Scotland `}
-                      className="rounded-0 slider_dropbtn px-1"
+                      className="rounded-0 slider_dropbtn text-light px-1"
                     >
                       <div className="rounded-0 p-1">
                         {["end"].map((direction) => (
@@ -366,7 +379,7 @@ const Menu = () => {
                         <hr className="dropdown-divider" />
                       </div>
                       <Row>
-                        <Col md={5}>
+                        <Col md={6}>
                           <small>
                             <Link className="dropdown-item" to="#">
                               <GiMountains className="h3 mb-0" />
@@ -375,7 +388,7 @@ const Menu = () => {
                             </Link>
                           </small>
                         </Col>
-                        <Col md={5}>
+                        <Col md={6}>
                           <small>
                             <Link className="dropdown-item" to="#">
                               <GiSeaDragon className="h3 mb-0" />
@@ -384,7 +397,7 @@ const Menu = () => {
                             </Link>
                           </small>
                         </Col>
-                        <Col md={5}>
+                        <Col md={6}>
                           <small>
                             <Link className="dropdown-item" to="#">
                               <GiHillFort className="h3 mb-0" />
@@ -393,7 +406,7 @@ const Menu = () => {
                             </Link>
                           </small>
                         </Col>
-                        <Col md={5}>
+                        <Col md={6}>
                           <small>
                             <Link className="dropdown-item" to="#">
                               <GiAnglerFish className="h3 mb-0" />
@@ -402,7 +415,7 @@ const Menu = () => {
                             </Link>
                           </small>
                         </Col>
-                        <Col md={5}>
+                        <Col md={6}>
                           <small>
                             <Link className="dropdown-item" to="#">
                               <AiOutlineCoffee className="h3 mb-0" />
@@ -411,12 +424,12 @@ const Menu = () => {
                             </Link>
                           </small>
                         </Col>
-                        <Col md={5}>
+                        <Col md={6}>
                           <small>
                             <Link className="dropdown-item" to="#">
                               <GiIsland className="h3 mb-0" />
                               <br />
-                              <small>Skottish Islands</small>
+                              <small className="me-1">Skottish Islands</small>
                             </Link>
                           </small>
                         </Col>
@@ -434,7 +447,7 @@ const Menu = () => {
                       key={direction}
                       id={`dropdown-button-drop-${direction}`}
                       drop={direction}
-                      variant="light"
+                      variant="flat"
                       title={` Tour England `}
                       className="bg-default rounded-0 px-1"
                     >
@@ -611,7 +624,7 @@ const Menu = () => {
                                   id={`dropdown-button-drop-${direction}`}
                                   drop={direction}
                                   variant="light"
-                                  title={` 3 - 5 Day Tours From Edinburgh `}
+                                  title={` 3 - 5 Day Tours From Manchester `}
                                   className="bg-default rounded-0 slider_dropbtn px-1"
                                 >
                                   {EnglandManchesterThreeDayNavTour.map((li) => (
@@ -632,7 +645,7 @@ const Menu = () => {
                                   id={`dropdown-button-drop-${direction}`}
                                   drop={direction}
                                   variant="light"
-                                  title={` 6 - 10 Day Tours From Edinburgh `}
+                                  title={` 6 - 10 Day Tours From Manchester `}
                                   className="bg-default rounded-0 slider_dropbtn px-1"
                                 >
                                   {EnglandManchesterSixDayNav.map((li) => (
@@ -648,6 +661,33 @@ const Menu = () => {
                           </DropdownButton>
                         ))}
                       </div>
+                      <li><hr className="dropdown-divider" /></li>
+                      <Row>
+                        <Col md={5}>
+                          <small>
+                            <Link className="dropdown-item" to="#">
+                              <GiSpookyHouse className='h3 mb-0' /><br />
+                              <small>The Cotswolds</small>
+                            </Link>
+                          </small>
+                        </Col>
+                        <Col md={5}>
+                          <small>
+                            <Link className="dropdown-item" to="#">
+                              <GiWaterfall className='h3 mb-0'  /><br />
+                              <small>Lake District</small>
+                            </Link>
+                          </small>
+                        </Col>
+                        <Col md={5}>
+                          <small>
+                            <Link className="dropdown-item" to="#">
+                              <GiBathtub className='h3 mb-0'  /><br />
+                              <small>Bath</small>
+                            </Link>
+                          </small>
+                        </Col>
+                      </Row>
                     </DropdownButton>
                   ))}
                 </div>
@@ -659,7 +699,7 @@ const Menu = () => {
                     key={direction}
                     id={`dropdown-button-drop-${direction}`}
                     drop={direction}
-                    variant="light"
+                    variant="flat"
                     title={` Tour Ireland `}
                     className="bg-default rounded-0 px-1"
                   >
@@ -692,7 +732,7 @@ const Menu = () => {
                         id={`dropdown-button-drop-${direction}`}
                         drop={direction}
                         variant="light"
-                        title={` 4 - 5 Day Tours From Edinburgh `}
+                        title={` 4 - 5 Day Tours From Dublin `}
                         className="bg-default rounded-0 slider_dropbtn px-1"
                       >
                         {IrelandDublinFourDayNav.map((li) => (
@@ -713,7 +753,7 @@ const Menu = () => {
                         id={`dropdown-button-drop-${direction}`}
                         drop={direction}
                         variant="light"
-                        title={` 7 - 11 Day Tours From Edinburgh `}
+                        title={` 7 - 11 Day Tours From Dublin `}
                         className="bg-default rounded-0 slider_dropbtn px-1"
                       >
                         {IrelandDublinSevenDayNav.map((li) => (
@@ -726,6 +766,41 @@ const Menu = () => {
                       </DropdownButton>
                     ))}
                   </div>
+                  <li><hr className="dropdown-divider" /></li>
+                  <Row>
+                    <Col md={6}>
+                      <small>
+                        <Link className="dropdown-item" to="#">
+                          <GiCliffCrossing className='h3 mb-0' /><br />
+                          <small className='text-wrap'>Moher Cliffs</small>
+                        </Link>
+                      </small>
+                    </Col>
+                    <Col md={6}>
+                      <small>
+                        <Link className="dropdown-item" to="#">
+                          <GiAtSea className='h3 mb-0'  /><br />
+                          <small>Dingle Peninsula</small>
+                        </Link>
+                      </small>
+                    </Col>
+                    <Col md={6}>
+                      <small>
+                        <Link className="dropdown-item" to="#">
+                          <GiSunflower className='h3 mb-0'  /><br />
+                          <small>Northern Ireland</small>
+                        </Link>
+                      </small>
+                    </Col>
+                    <Col md={6}>
+                      <small>
+                        <Link className="dropdown-item" to="#">
+                          <GiWildfires className='h3 mb-0'  /><br />
+                          <small>Wild Atlantic</small>
+                        </Link>
+                      </small>
+                    </Col>
+                  </Row>
                   </DropdownButton>
                 ))}
               </div>
@@ -738,7 +813,7 @@ const Menu = () => {
                     key={direction}
                     id={`dropdown-button-drop-${direction}`}
                     drop={direction}
-                    variant="light"
+                    variant="flat"
                     title={` Tour Europe `}
                     className="bg-default rounded-0 px-1"
                   >
@@ -788,6 +863,26 @@ const Menu = () => {
                   </DropdownButton>
                 ))}
               </div>
+            </ul>
+
+            <ul className='navbar-nav ms-auto'>
+              <li className="nav-item dropdown">
+                <Link className="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  About
+                </Link>
+                <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <Link className="dropdown-item" to="/about">About Rabbies</Link>
+                  <Link className="dropdown-item" to="#">Community</Link>
+                  <Link className="dropdown-item" to="#">Careers</Link>
+                  <Link className="dropdown-item" to="/contact">Contact Us</Link>
+                </div>
+              </li>
+              <li className='nav-item'>
+                <Link className='nav-link' to="#">Private Tours</Link>
+              </li>
+              <li className='nav-item'>
+                <Link className='nav-link' to="#"><AiOutlinePhone /></Link>
+              </li>
             </ul>
           </div>
           

@@ -31,24 +31,24 @@ const Payment = () => {
                 <h1 className='text-center'> Stripe Card Payment</h1>
 
               <form>
-                <div class="form-group">
+                <div className="form-group">
                   <label>Adress 1 <span className='text-success'>*</span></label>
-                  <input type="text" class="form-control" id="formGroupExampleInput" /> 
+                  <input type="text" className="form-control" id="formGroupExampleInput" /> 
                 </div>
-                <div class="row mb-3">
-                  <div class="col">
+                <div className="row mb-3">
+                  <div className="col">
                     <label>Town / City <span className='text-success'>*</span></label>
-                    <input type="text" class="form-control" />
+                    <input type="text" className="form-control" />
                   </div>
-                  <div class="col">
+                  <div className="col">
                     <label>Post Code / Zip <span className='text-success'>*</span></label>
-                    <input type="text" class="form-control" />
+                    <input type="text" className="form-control" />
                   </div>
                 </div>
                 
-                <div class="form-group">
+                <div className="form-group">
                   <label>Country</label>
-                  <select class="custom-select" id="country" name="country">
+                  <select className="custom-select" id="country" name="country">
                     <option>select country</option>
                     <option value="AF">Afghanistan</option>
                     <option value="AX">Aland Islands</option>
@@ -308,14 +308,14 @@ const Payment = () => {
                 <hr className=' my-4' />
 
 
-                <div class="form-group form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-                  <label class="form-check-label" for="exampleCheck1">
+                <div className="form-group form-check">
+                  <input type="checkbox" className="form-check-input" id="exampleCheck1" />
+                  <label className="form-check-label" for="exampleCheck1">
                     <span className='text-success'>*</span> Check this box to confirm you've read, understood & accept Rabbie's Trail Burners <Link to="#" className='text-success'>Terms & Conditions</Link> of booking.
                   </label>
                 </div>
 
-                <button type="submit" class="btn btn-outline-success btn-lg my-4">Pay securely</button>
+                <button type="submit" className="btn btn-outline-success btn-lg my-4">Pay securely</button>
               </form>
             </Col>
             <Col md={4}>
