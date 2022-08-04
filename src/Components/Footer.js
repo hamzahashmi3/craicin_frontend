@@ -19,21 +19,21 @@ const Footer = () => {
                   <h6 className="font-weight-bold mb-3">Pages</h6>
                   <ul className="navbar-nav">
                     <li className="nav-item"><Link to="/conferenceservices" className="text-white">Conference Services</Link></li>
-                    <li className="nav-item"><Link to="/termsconditions" className="text-white">Student Tours Scotland</Link></li>
+                    <li className="nav-item"><Link to="/studenttours" className="text-white">Student Tours Scotland</Link></li>
                     <li className="nav-item"><Link to="/agentsaffiliates" className="text-white">Agents & Affiliates</Link></li>
                     <li className="nav-item"><Link to="/privacycookies" className="text-white">Privacy & Cookies</Link></li>
-                    <li className="nav-item"><Link to="#" className="text-white">Terms & Conditions</Link></li>
-                    <li className="nav-item"><Link to="#" className="text-white">Accessibility</Link></li>
-                    <li className="nav-item"><Link to="/privacypolicy" className="text-white">Careers</Link></li>
-                    <li className="nav-item"><Link to="/shippingpolicy" className="text-white">Blog</Link></li>
-                    <li className="nav-item"><Link to="#" className="text-white">FAQs</Link></li>
+                    <li className="nav-item"><Link to="/terms" className="text-white">Terms & Conditions</Link></li>
+                    <li className="nav-item"><Link to="/accessibility" className="text-white">Accessibility</Link></li>
+                    <li className="nav-item"><Link to="/careers" className="text-white">Careers</Link></li>
+                    <li className="nav-item"><Link to="/blogs" className="text-white">Blog</Link></li>
+                    <li className="nav-item"><Link to="/faq" className="text-white">FAQs</Link></li>
                   </ul>
                 </div>
 
                 <div className="col-md-4">
                   <h6 className="font-weight-bold mb-3">Links</h6>
                   <ul className="navbar-nav">
-                    <li className="nav-item"><Link to="#" className="text-white">Follow us</Link></li>
+                    <li className="nav-item">Follow us</li>
                     <div className="d-flex m-auto mt-4">
                       <li className="nav-item h1 me-3"><a href="https://www.facebook.com/" target="_blank" className="text-white" rel="noreferrer"><FaFacebookF /></a></li>
                       <li className="nav-item h1 me-3"><a href="https://www.instagram.com/" target="_blank" className="text-white" rel="noreferrer"><ImInstagram /></a></li>

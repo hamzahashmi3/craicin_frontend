@@ -70,7 +70,7 @@ const About = () => {
         <Container>
           <h1 style={{fontFamily: 'Open Sans'}} className='display-5 my-5 text-center text-muted'>Meet the Guides</h1>
           <Row>
-            <Col md={6} className='mx-auto'>
+            <Col md={6} className='m-auto'>
               <iframe width="560" height="315" src="https://www.youtube.com/embed/_OHDm6ccPcU" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             </Col>
             <Col md={12} className='text-center'>

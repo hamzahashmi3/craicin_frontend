@@ -867,21 +867,23 @@ const Menu = () => {
 
             <ul className='navbar-nav ms-auto'>
               <li className="nav-item dropdown">
-                <Link className="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <Link className="nav-link dropdown-toggle text-white" to="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   About
                 </Link>
                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <Link className="dropdown-item" to="/about">About Rabbies</Link>
-                  <Link className="dropdown-item" to="#">Community</Link>
+                  <a className="dropdown-item" href="https://www.share.rabbies.com/">Community</a>
                   <Link className="dropdown-item" to="#">Careers</Link>
                   <Link className="dropdown-item" to="/contact">Contact Us</Link>
                 </div>
               </li>
               <li className='nav-item'>
-                <Link className='nav-link' to="#">Private Tours</Link>
+                <Link className='nav-link text-white' to="/privatetours">Private Tours</Link>
               </li>
               <li className='nav-item'>
-                <Link className='nav-link' to="#"><AiOutlinePhone /></Link>
+                <a className='nav-link text-white' href="https://wa.me/441312263133"  data-toggle="tooltip" data-placement="bottom" title="+44(0) 131 226 3133">
+                  <AiOutlinePhone />
+                </a>
               </li>
             </ul>
           </div>
