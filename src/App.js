@@ -14,7 +14,10 @@ import Footer from './Components/Footer'
 
 import ConferenceServices from './Pages/ConferenceServices'
 import AgentsAffiliates from './Pages/AgentsAffiliates'
-import PrivacyCookies from './Pages/PrivacyCookies';
+import PrivacyCookies from './Pages/PrivacyCookies'
+import Accessibility from './Pages/Accessibility'
+import PrivateTours from './Pages/PrivateTours'
+
 
 function App() {
 
@@ -58,8 +61,8 @@ function App() {
         <Route path="/conferenceservices" element={<ConferenceServices />} />
         <Route path="/agentsaffiliates" element={<AgentsAffiliates />} />
         <Route path="/privacycookies" element={<PrivacyCookies />} />
-        <Route path="/privacycookies" element={<PrivacyCookies />} />
-        <Route path="/privacycookies" element={<PrivacyCookies />} />
+        <Route path="/accessibility" element={<Accessibility />} />
+        <Route path="/privatetours" element={<PrivateTours />} />
       </Routes>
       <Footer />
     </div>
