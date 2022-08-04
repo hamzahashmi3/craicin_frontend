@@ -1,8 +1,8 @@
 import './App.css';
 import {useState} from 'react'
 import { Routes, Route } from 'react-router-dom'
+
 import Navbar from './Components/Navbar'
-import Footer from './Components/Footer'
 import Home from './Screens/Home'
 import Tour from './Screens/Tours'
 import About from './Screens/About'
@@ -10,8 +10,11 @@ import Contact from './Screens/Contact'
 import Checkout from './Screens/Checkout'
 import Payment from './Screens/Payment'
 import Page404 from './Components/404'
+import Footer from './Components/Footer'
 
-
+import ConferenceServices from './Pages/ConferenceServices'
+import AgentsAffiliates from './Pages/AgentsAffiliates'
+import PrivacyCookies from './Pages/PrivacyCookies';
 
 function App() {
 
@@ -51,6 +54,12 @@ function App() {
             setTourBooking={setTourBooking} />}  
           />
         <Route path="/*" element={<Page404 />} />
+
+        <Route path="/conferenceservices" element={<ConferenceServices />} />
+        <Route path="/agentsaffiliates" element={<AgentsAffiliates />} />
+        <Route path="/privacycookies" element={<PrivacyCookies />} />
+        <Route path="/privacycookies" element={<PrivacyCookies />} />
+        <Route path="/privacycookies" element={<PrivacyCookies />} />
       </Routes>
       <Footer />
     </div>
