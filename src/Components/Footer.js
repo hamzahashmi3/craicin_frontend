@@ -18,10 +18,10 @@ const Footer = () => {
                 <div className="col-md-4">
                   <h6 className="font-weight-bold mb-3">Pages</h6>
                   <ul className="navbar-nav">
-                    <li className="nav-item"><Link to="/faq" className="text-white">Conference Services</Link></li>
+                    <li className="nav-item"><Link to="/conferenceservices" className="text-white">Conference Services</Link></li>
                     <li className="nav-item"><Link to="/termsconditions" className="text-white">Student Tours Scotland</Link></li>
-                    <li className="nav-item"><Link to="/cancellationpolicy" className="text-white">Agents & Affiliates</Link></li>
-                    <li className="nav-item"><Link to="#" className="text-white">Privacy & Cookies</Link></li>
+                    <li className="nav-item"><Link to="/agentsaffiliates" className="text-white">Agents & Affiliates</Link></li>
+                    <li className="nav-item"><Link to="/privacycookies" className="text-white">Privacy & Cookies</Link></li>
                     <li className="nav-item"><Link to="#" className="text-white">Terms & Conditions</Link></li>
                     <li className="nav-item"><Link to="#" className="text-white">Accessibility</Link></li>
                     <li className="nav-item"><Link to="/privacypolicy" className="text-white">Careers</Link></li>
