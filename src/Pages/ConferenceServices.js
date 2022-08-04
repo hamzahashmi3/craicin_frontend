@@ -76,7 +76,7 @@ const ConferenceServices = () => {
                             <h4>Walking Tours of Edinburgh</h4>
                             <h6 className='text-dark' style={{fontStyle: 'italic'}}>Ghost & Ghouls Tour</h6>
                             <p>Centuries of murder, torture, hangings and plague have left a haunting legacy on the city of Edinburgh. This tour will take clients on a journey around the eerie old buildings and narrow closes of the Old Town. Let the cloaked guide lead you down into the Vaults beneath the South Bridge and hear stories of those who once occupied these dark chambers and perhaps still do… Duration 1hr 15 minutes.</p>
-                            <quote style={{fontStyle: 'italic'}}>Secrets of the Royal Mile</quote>
+                            <q style={{fontStyle: 'italic'}}>Secrets of the Royal Mile</q>
                             <p>The best way to explore Edinburgh is to follow your feet. Where the buses can’t take you, and the guide books don’t show you is where our city’s stories lie – the closes, wynds, courtyards and homes of Old Edinburgh. We’ll visit the sites that are tucked away to see the secrets and tell the tales. We’ll help unlock our fascinating past – the culture, crime, politics and people of Scotland’s capital. Duration 1hr 30 minutes.</p>
 
                             <h3>Why choose Rabbie’s for your conference?</h3>
