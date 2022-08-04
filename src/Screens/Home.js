@@ -1,7 +1,7 @@
 import {useState} from 'react'
 
 import {Link} from 'react-router-dom'
-import { Typewriter } from 'react-simple-typewriter'
+import { useTypewriter, Cursor} from 'react-simple-typewriter'
 import {Container, Row, Col} from 'react-bootstrap'
 
 import {FcSearch} from 'react-icons/fc'
@@ -23,6 +23,14 @@ const Home = () => {
     setShow((prevValue) => prevValue + 3)
   }
 
+  const {text} = useTypewriter({
+    words: [' guidebooks', ' Imaginations', ' Limits', ' Comfort Level'],
+    loop: 0,
+    delaySpeed: 1000,
+    typeSpeed: 70,
+    deleteSpeed: 50,
+    onLoopDone: () => console.log(`TypeWriter loops.`),
+  })
 
   // Masonry instagram Image Gallery
   const Label = styled(Paper)(({ theme }) => ({
@@ -42,16 +50,8 @@ const Home = () => {
       <header className='bg-img'>
         <code>
           <h1 className='text-white text-center' style={{paddingTop: '235px', textShadow: '1px 2px #000'}}>
-            Go beyond the
-            <Typewriter
-              words={[' guidebooks', ' Imaginations', ' Limits', ' Comfort Level']}
-              loop={50}
-              cursor
-              cursorStyle='_'
-              typeSpeed={70}
-              deleteSpeed={50}
-              delaySpeed={1000}
-            />
+            Go beyond the {text} 
+            <Cursor cursorStyle="_" />
           </h1>
         </code>
         

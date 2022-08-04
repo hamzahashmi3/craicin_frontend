@@ -33,7 +33,7 @@ const Footer = () => {
                 <div className="col-md-4">
                   <h6 className="font-weight-bold mb-3">Links</h6>
                   <ul className="navbar-nav">
-                    <li className="nav-item"><Link to="#" className="text-white">Follow us</Link></li>
+                    <li className="nav-item">Follow us</li>
                     <div className="d-flex m-auto mt-4">
                       <li className="nav-item h1 me-3"><a href="https://www.facebook.com/" target="_blank" className="text-white" rel="noreferrer"><FaFacebookF /></a></li>
                       <li className="nav-item h1 me-3"><a href="https://www.instagram.com/" target="_blank" className="text-white" rel="noreferrer"><ImInstagram /></a></li>
