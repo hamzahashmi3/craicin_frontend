@@ -22,10 +22,9 @@ const Footer = () => {
                     <li className="nav-item"><Link to="/studenttours" className="text-white">Student Tours Scotland</Link></li>
                     <li className="nav-item"><Link to="/agentsaffiliates" className="text-white">Agents & Affiliates</Link></li>
                     <li className="nav-item"><Link to="/privacycookies" className="text-white">Privacy & Cookies</Link></li>
-                    <li className="nav-item"><Link to="/terms" className="text-white">Terms & Conditions</Link></li>
+                    <li className="nav-item"><Link to="/termsconditions" className="text-white">Terms & Conditions</Link></li>
                     <li className="nav-item"><Link to="/accessibility" className="text-white">Accessibility</Link></li>
                     <li className="nav-item"><Link to="/careers" className="text-white">Careers</Link></li>
-                    <li className="nav-item"><Link to="/blogs" className="text-white">Blog</Link></li>
                     <li className="nav-item"><Link to="/faq" className="text-white">FAQs</Link></li>
                   </ul>
                 </div>

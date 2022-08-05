@@ -1027,3 +1027,4 @@ export const imageGallery = [
     title: 'Bike',
   },
 ];
+
