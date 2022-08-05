@@ -17,7 +17,9 @@ import AgentsAffiliates from './Pages/AgentsAffiliates'
 import PrivacyCookies from './Pages/PrivacyCookies'
 import Accessibility from './Pages/Accessibility'
 import PrivateTours from './Pages/PrivateTours'
-
+import StudentTours from './Pages/StudentTours'
+import TermsConditions from './Pages/TermsConditions'
+import Faq from './Pages/Faq'
 
 function App() {
 
@@ -63,6 +65,10 @@ function App() {
         <Route path="/privacycookies" element={<PrivacyCookies />} />
         <Route path="/accessibility" element={<Accessibility />} />
         <Route path="/privatetours" element={<PrivateTours />} />
+        <Route path="/studenttours" element={<StudentTours />} />
+        <Route path="/termsconditions" element={<TermsConditions />} />
+        <Route path="/faq" element={<Faq />} />
+        
       </Routes>
       <Footer />
     </div>

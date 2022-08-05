@@ -114,62 +114,62 @@ const PrivateTours = () => {
                     <p className='text-center'>If you've got any questions about scheduled tours, please <Link to="/contact" className='text-success'>contact us here</Link>.</p>                 
 
                     <form>
-                        <div class="form-group">
+                        <div className="form-group">
                             <label for="exampleInputEmail1">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                            <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
                         </div>
-                        <div class="form-group">
+                        <div className="form-group">
                             <label for="exampleInputPassword1">Your name</label>
-                            <input type="text" class="form-control" id="exampleInputPassword1" />
+                            <input type="text" className="form-control" id="exampleInputPassword1" />
                         </div>
-                        <div class="form-group">
+                        <div className="form-group">
                             <label for="exampleInputPassword1">Number of adults</label>
-                            <input type="number" class="form-control" id="exampleInputPassword1" />
+                            <input type="number" className="form-control" id="exampleInputPassword1" />
                         </div>
-                        <div class="form-group">
+                        <div className="form-group">
                             <label for="exampleInputPassword1">Number of children</label>
-                            <input type="number" class="form-control" id="exampleInputPassword1" />
+                            <input type="number" className="form-control" id="exampleInputPassword1" />
                         </div>
                         <p>Where and when would you like to go: *</p>
 
-                        <div class="row">
-                            <div class="col">
+                        <div className="row">
+                            <div className="col">
                                 <label for="inlineFormInputGroup">Start:</label>
-                                <div class="input-group">
-                                    <div class="input-group-prepend">
-                                        <div class="input-group-text text-success"><ImLocation /></div>
+                                <div className="input-group">
+                                    <div className="input-group-prepend">
+                                        <div className="input-group-text text-success"><ImLocation /></div>
                                     </div>
-                                    <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Starting Point..." />
+                                    <input type="text" className="form-control" id="inlineFormInputGroupUsername" placeholder="Starting Point..." />
                                 </div>
                             </div>
-                            <div class="col">
+                            <div className="col">
                                 <label for="inlineFormInputGroup">Finish:</label>
-                                <div class="input-group">
-                                    <div class="input-group-prepend">
-                                        <div class="input-group-text text-success"><ImLocation /></div>
+                                <div className="input-group">
+                                    <div className="input-group-prepend">
+                                        <div className="input-group-text text-success"><ImLocation /></div>
                                     </div>
-                                    <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Finish Point..." />
+                                    <input type="text" className="form-control" id="inlineFormInputGroupUsername" placeholder="Finish Point..." />
                                 </div>
                             </div>
                         </div>
-                        <div class="row my-3">
-                            <div class="col">
+                        <div className="row my-3">
+                            <div className="col">
                                 <label for="inlineFormInputGroup">Start Date:</label>
-                                <div class="input-group">
-                                    <div class="input-group-prepend">
-                                        <div class="input-group-text text-success"><BsFillCalendarEventFill /></div>
+                                <div className="input-group">
+                                    <div className="input-group-prepend">
+                                        <div className="input-group-text text-success"><BsFillCalendarEventFill /></div>
                                     </div>
-                                    <input type="date" class="form-control" id="inlineFormInputGroupUsername" placeholder="Finish Point..." />
+                                    <input type="date" className="form-control" id="inlineFormInputGroupUsername" placeholder="Finish Point..." />
                                 </div>
                             </div>
-                            <div class="col">
+                            <div className="col">
                                 <label for="inlineFormInputGroup">Finish Date:</label>
-                                <div class="input-group">
-                                    <div class="input-group-prepend">
-                                        <div class="input-group-text text-success"><BsFillCalendarEventFill /></div>
+                                <div className="input-group">
+                                    <div className="input-group-prepend">
+                                        <div className="input-group-text text-success"><BsFillCalendarEventFill /></div>
                                     </div>
-                                    <input type="date" class="form-control" id="inlineFormInputGroupUsername" placeholder="Finish Point..." />
+                                    <input type="date" className="form-control" id="inlineFormInputGroupUsername" placeholder="Finish Point..." />
                                 </div>
                             </div>
                         </div>
@@ -178,7 +178,7 @@ const PrivateTours = () => {
                         </textarea>
 
                         <h1>Recaptcha will be here...</h1>
-                        <button type="submit" class="btn btn-outline-success btn-lg">Send</button>
+                        <button type="submit" className="btn btn-outline-success btn-lg">Send</button>
                     </form>
 
                 </Col>
