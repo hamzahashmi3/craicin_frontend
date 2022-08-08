@@ -16,7 +16,6 @@ const Checkout = () => {
   
   const handleSubmit = async (e) => {
     e.preventDefault()
-
   }
 
   return (
