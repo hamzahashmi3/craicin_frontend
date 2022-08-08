@@ -1,10 +1,51 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {Container, Row, Col} from 'react-bootstrap'
-import { Link } from 'react-router-dom'
+import axios from 'axios'
 
 
 const Contact = () => {
+
+  const [fullName, setFullName] = useState('')
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
+  const [successMsg, setSuccessMsg] = useState('')
+
+  const validateEmployee = contactData => {
+    const errors = {};
+  
+    if (!contactData.fullName) {
+      errors.Name = 'Please Enter Name';
+    } else if (contactData.contactData.length <= 3) {
+      errors.contactData = 'Name should be more than 2 characters';
+    }  
+    if (!contactData.EmailId) {
+      errors.EmailId = 'Please Enter Email ID';
+    } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(contactData.EmailId)) {
+      errors.EmailId = 'Invalid email address';
+    }
+    if (!contactData.message) {
+      errors.message = 'Please Enter Message';
+    } 
+  
+    return errors;
+  };
+
+  const submitHandler = async (e) => {
+    e.preventDefault()
+    let res = await axios.post('http://localhost:5000/api/contactus', {
+      fullName,
+      email,
+      message,
+    }).then(res => res.data, setSuccessMsg('Your Data Submitted Successfully, We Will Contact You Shortly'))
+    setTimeout(() => {
+      window.location.reload()
+    }, 3500)
+    validate: validateEmployee
+    .catch(err => console.log(err))
+  }
+
   return (
+
     <div>
       <section className='bg-contact-img'>
         <code>
@@ -37,24 +78,33 @@ const Contact = () => {
                     <p>Press enquiries: <a className='text-success h6 fw-normal' href="#">PR@rabbies.com</a></p>
                 </Col>
                 <Col md={6}>
-                    <form className="" method="POST">
+                    <form onSubmit={submitHandler}>
                         <div className="form-group">
                             <label>Full Name</label>
-                            <input type="text" required placeholder="Your FullName" className="form-control" />
+                            <input type="text" 
+                            onChange={(e)=>setFullName(e.target.value)} 
+                            value={fullName} name="fullName" 
+                            placeholder="Your FullName" className="form-control" />
                         </div>
                         <div className="form-group">
                             <label>Email</label>
-                            <input type="email" required placeholder="Your Email Address" className="form-control" />
+                            <input type="email" required 
+                            onChange={(e)=>setEmail(e.target.value)} 
+                            value={email}
+                            name="email" placeholder="Your Email Address" className="form-control" />
                         </div>
                         <div className="form-group">
                             <label>Message</label>
-                            <textarea className="form-control" required placeholder="You Message here." rows="4"></textarea>
+                            <textarea className="form-control" 
+                            onChange={(e)=>setMessage(e.target.value)} 
+                            value={message}
+                            name="message" placeholder="You Message here." rows="4"></textarea>
                         </div>
-                        <button className="btn btn-outline-success">Submit</button>
+                        <p className={successMsg ? 'alert alert-success py-1': 'd-none'}>{successMsg ? <p className='mt-2'>{successMsg}</p> : ''}</p>
+                        <button className="btn btn-outline-success" type="submit">Submit</button>
                     </form>
                 </Col>
-                <Col md={12}>
-                </Col>
+
             </Row>
         </Container>
       </section>
