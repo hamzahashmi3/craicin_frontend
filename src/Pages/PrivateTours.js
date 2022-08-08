@@ -1,7 +1,7 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {Container, Row, Col} from 'react-bootstrap'
 import {Link} from 'react-router-dom'
-
+import axios from 'axios'
 import { GoogleReCaptchaProvider } from 'react-google-recaptcha-v3'
 
 import {ImLocation} from 'react-icons/im'
@@ -11,6 +11,37 @@ import {FaPenFancy, FaWalking, FaPhoneAlt} from 'react-icons/fa'
 
 
 const PrivateTours = () => {
+
+    const [emailAdress, setEmailAdress] = useState('')
+    const [yourname, setYourname] = useState('')
+    const [numberofAdults, setNumberofAdults] = useState('')
+    const [numberofChildrens, setNumberofChildrens] = useState('')
+    const [startPoint, setStartPoint] = useState('')
+    const [finishPoint, setFinishPoint] = useState('')
+    const [startDate, setStartDate] = useState('')
+    const [finishDate, setFinishDate] = useState('')
+    const [Describe, setDescribe] = useState('')
+    const [successMsg, setSuccessMsg] = useState('')
+
+
+    const submitHandler = async (e) => {
+        e.preventDefault()
+        let res = await axios.post('http://localhost:5000/api/privateTours', {
+        emailAdress,
+        yourname,
+        numberofAdults,
+        numberofChildrens,
+        startPoint,
+        finishPoint,
+        startDate,
+        finishDate,
+        Describe
+    }).then(res => res.data, setSuccessMsg("We've received your data, We will contact you shortly"))
+    setTimeout(() => {
+        window.location.reload()
+    }, 3500)
+    .catch(err => console.log(err))
+    }
   return (
     <div className='text-muted'>
         <section className='bg-checkout-img'>
@@ -116,20 +147,20 @@ const PrivateTours = () => {
                     <form>
                         <div className="form-group">
                             <label for="exampleInputEmail1">Email address</label>
-                            <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                            <input type="email" className="form-control" onChange={(e) => setEmailAdress(e.target.value)} name="emailAdress" id="exampleInputEmail1" aria-describedby="emailHelp" />
                             <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
                         </div>
                         <div className="form-group">
                             <label for="exampleInputPassword1">Your name</label>
-                            <input type="text" className="form-control" id="exampleInputPassword1" />
+                            <input type="text" className="form-control" onChange={(e) => setYourname(e.target.value)} name="yourname" id="exampleInputPassword1" />
                         </div>
                         <div className="form-group">
                             <label for="exampleInputPassword1">Number of adults</label>
-                            <input type="number" className="form-control" id="exampleInputPassword1" />
+                            <input type="number" className="form-control" onChange={(e) => setNumberofAdults(e.target.value)} name="numberofAdults" id="exampleInputPassword1" />
                         </div>
                         <div className="form-group">
                             <label for="exampleInputPassword1">Number of children</label>
-                            <input type="number" className="form-control" id="exampleInputPassword1" />
+                            <input type="number" className="form-control" onChange={(e) => setNumberofChildrens(e.target.value)} name="numberofChildrens"  id="exampleInputPassword1" />
                         </div>
                         <p>Where and when would you like to go: *</p>
 
@@ -140,7 +171,7 @@ const PrivateTours = () => {
                                     <div className="input-group-prepend">
                                         <div className="input-group-text text-success"><ImLocation /></div>
                                     </div>
-                                    <input type="text" className="form-control" id="inlineFormInputGroupUsername" placeholder="Starting Point..." />
+                                    <input type="text" className="form-control" onChange={(e) => setStartPoint(e.target.value)} name="startPoint" id="inlineFormInputGroupUsername" placeholder="Starting Point..." />
                                 </div>
                             </div>
                             <div className="col">
@@ -149,7 +180,7 @@ const PrivateTours = () => {
                                     <div className="input-group-prepend">
                                         <div className="input-group-text text-success"><ImLocation /></div>
                                     </div>
-                                    <input type="text" className="form-control" id="inlineFormInputGroupUsername" placeholder="Finish Point..." />
+                                    <input type="text" className="form-control" onChange={(e) => setFinishPoint(e.target.value)} name="finishPoint" id="inlineFormInputGroupUsername" placeholder="Finish Point..." />
                                 </div>
                             </div>
                         </div>
@@ -160,7 +191,7 @@ const PrivateTours = () => {
                                     <div className="input-group-prepend">
                                         <div className="input-group-text text-success"><BsFillCalendarEventFill /></div>
                                     </div>
-                                    <input type="date" className="form-control" id="inlineFormInputGroupUsername" placeholder="Finish Point..." />
+                                    <input type="date" className="form-control" onChange={(e) => setStartDate(e.target.value)} name="startDate" id="inlineFormInputGroupUsername" placeholder="Finish Point..." />
                                 </div>
                             </div>
                             <div className="col">
@@ -169,16 +200,17 @@ const PrivateTours = () => {
                                     <div className="input-group-prepend">
                                         <div className="input-group-text text-success"><BsFillCalendarEventFill /></div>
                                     </div>
-                                    <input type="date" className="form-control" id="inlineFormInputGroupUsername" placeholder="Finish Point..." />
+                                    <input type="date" className="form-control" onChange={(e) => setFinishDate(e.target.value)} name="finishDate" id="inlineFormInputGroupUsername" placeholder="Finish Point..." />
                                 </div>
                             </div>
                         </div>
                         <label>Describe your ideal itinerary:</label>
-                        <textarea className='form-control' placeholder='e.g. I want to stop at all beaches and coastlines'>
+                        <textarea className='form-control' placeholder='e.g. I want to stop at all beaches and coastlines' onChange={(e) => setDescribe(e.target.value)} name="Describe">
                         </textarea>
 
                         <h1>Recaptcha will be here...</h1>
-                        <button type="submit" className="btn btn-outline-success btn-lg">Send</button>
+                        <div className={successMsg ? 'alert alert-success': 'd-none'}>{successMsg ? <p>{successMsg}</p> : ''}</div>
+                        <button type="submit" onClick={submitHandler} className="btn btn-outline-success btn-lg">Send</button>
                     </form>
 
                 </Col>

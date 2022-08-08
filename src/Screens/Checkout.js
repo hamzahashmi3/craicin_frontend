@@ -1,9 +1,24 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {Container, Row, Col} from 'react-bootstrap'
 import {Link} from 'react-router-dom'
 
 
 const Checkout = () => {
+
+  const [firstName, setfirstName] = useState('')
+  const [lastName, setlastName] = useState('')
+  const [email, setemail] = useState('')
+  const [country, setcountry] = useState('')
+  const [mobile, setmobile] = useState('')
+
+  const [Disability, setDisability] = useState('')
+
+  
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+
+  }
+
   return (
     <div>
       <section className='bg-checkout-img' style={{height: '375px'}}>
@@ -25,26 +40,26 @@ const Checkout = () => {
                 <div className="row mb-3">
                   <div className="col">
                     <label>First Name</label>
-                    <input type="text" className="form-control" />
+                    <input type="text" onChange={(e)=> setfirstName(e.target.value)} className="form-control" />
                   </div>
                   <div className="col">
                     <label>Last Name</label>
-                    <input type="text" className="form-control" />
+                    <input type="text" className="form-control" onChange={(e)=> setlastName(e.target.value)} />
                   </div>
                 </div>
                 <div className="row mb-3">
                   <div className="col">
                     <label>Email</label>
-                    <input type="text" className="form-control" />
+                    <input type="text" onChange={(e)=>setemail(e.target.value)} className="form-control" />
                   </div>
                   <div className="col">
                     <label>Confirm Email</label>
-                    <input type="text" className="form-control" />
+                    <input type="text" onChange={(e)=>setemail(e.target.value)} className="form-control" />
                   </div>
                 </div>
                 <div className="form-group">
                   <label>Country</label>
-                  <select className="custom-select" id="country" name="country">
+                  <select className="custom-select" onChange={(e)=>setcountry(e.target.value)} id="country" name="country">
                     <option>select country</option>
                     <option value="AF">Afghanistan</option>
                     <option value="AX">Aland Islands</option>
@@ -303,7 +318,7 @@ const Checkout = () => {
 
                 <div className="form-group">
                   <label for="formGroupExampleInput">Phone</label>
-                  <input type="tel" className="form-control" id="formGroupExampleInput" /> 
+                  <input type="tel" className="form-control" onChange={(e)=>setmobile(e.target.value)} id="formGroupExampleInput" /> 
                 </div>
 
                 <hr className=' my-4' />
@@ -418,7 +433,7 @@ const Checkout = () => {
                   Please let us know if you have a wheelchair, mobility requirements, dietary needs, 
                   or whether your friend booked a tour separately from you.
                 </label>
-                <textarea row="5" className='form-control mt-2 mb-4'></textarea>
+                <textarea row="5" onChange={(e)=>setDisability(e.target.value)} className='form-control mt-2 mb-4'></textarea>
                 <div className="form-group form-check">
                   <input type="checkbox" className="form-check-input" id="exampleCheck1" />
                   <label className="form-check-label" for="exampleCheck1">
