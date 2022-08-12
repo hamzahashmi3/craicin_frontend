@@ -4,8 +4,8 @@ import {Link} from 'react-router-dom'
 import { useTypewriter, Cursor} from 'react-simple-typewriter'
 import {Container, Row, Col} from 'react-bootstrap'
 
-import {FcSearch} from 'react-icons/fc'
 import {FaInstagram} from 'react-icons/fa'
+import {AiOutlineArrowRight, AiOutlineSearch} from 'react-icons/ai'
 import {BiDownArrowAlt} from 'react-icons/bi'
 
 import Box from '@mui/material/Box';
@@ -55,13 +55,12 @@ const Home = () => {
           </h1>
         </code>
         
-        <div className="col-md-6 m-auto mt-5 pt-3">
+        <div className="col-md-6 m-auto mt-5 pt-2">
           <small className="form-text text-white">Search our small group tours.</small>
           <div className="input-group mb-2">
-            <input type="text" className="form-control py-2" id="inlineFormInputGroup" placeholder="Search..." />
-            <div className="input-group-prepend">
-              <button className="input-group-text rounded-right"><FcSearch /></button>
-            </div>
+            <input type="text" className="form-control py-2" style={{width: "35%"}} placeholder="Search..." />
+            <input type="date" className="mx-2 form-control" />
+            <button className='btn btn-danger'>Search <AiOutlineArrowRight /></button>
           </div>
         </div>
 
@@ -240,6 +239,21 @@ const Home = () => {
           <Col md={1}></Col>
         </Row>
       </Container>
+
+
+      <section>
+        <div className='home_newsletter_bg'>
+          <Row>
+            <Col md={4} className="m-auto my-5 py-3">
+              <h4 className='text-white text-center'>Stay Up to date with our newsletter.</h4>
+              <div className='input-group'>
+                <input type="email" required className='form-control' placeholder='Enter Your Email' />
+                <button className='btn btn-success btn-sm ml-2'>Subscribe</button>
+              </div>
+            </Col>
+          </Row>
+        </div>
+      </section>
 
     </div>
   )
