@@ -20,7 +20,7 @@ const Footer = () => {
                   <img src="logo.png" alt="imgs/logo.png" className='img-fluid' style={{width: "125px"}} />
                 </Link>
                 <span className="mt-4 pt-4 text-white justify-content-center"> &copy; copyright 2022 Craicin.Inc.</span>
-                <Link class="nav-link text-white ml-3 mt-5" to="/privacypolicy">Privacy Policy</Link>
+                <Link className="nav-link text-white ml-3 mt-5" to="/privacypolicy">Privacy Policy</Link>
               </div>
 
               <ul className="nav">
@@ -34,27 +34,27 @@ const Footer = () => {
                 </div>
               </ul>
 
-              <ul class="nav mb-3">
-                <li class="nav-item">
-                  <Link class="nav-link text-white active" to="/faq">Faqs</Link>
+              <ul className="nav mb-3">
+                <li className="nav-item">
+                  <Link className="nav-link text-white active" to="/faq">Faqs</Link>
                 </li>
-                <li class="nav-item">
-                  <Link class="nav-link text-white" to="/termsconditions">Booking Terms</Link>
+                <li className="nav-item">
+                  <Link className="nav-link text-white" to="/termsconditions">Booking Terms</Link>
                 </li>
-                <li class="nav-item">
-                  <Link class="nav-link text-white" to="/termsconditions">Terms of Use</Link>
+                <li className="nav-item">
+                  <Link className="nav-link text-white" to="/termsconditions">Terms of Use</Link>
                 </li>
-                <li class="nav-item">
-                  <Link class="nav-link text-white" to="/">About Kensington Tours</Link>
+                <li className="nav-item">
+                  <Link className="nav-link text-white" to="/">About Kensington Tours</Link>
                 </li>
-                <li class="nav-item">
-                  <Link class="nav-link text-white" to="/">Media Center</Link>
+                <li className="nav-item">
+                  <Link className="nav-link text-white" to="/">Media Center</Link>
                 </li>
-                <li class="nav-item">
-                  <Link class="nav-link text-white" to="/">Careers</Link>
+                <li className="nav-item">
+                  <Link className="nav-link text-white" to="/">Careers</Link>
                 </li>
-                <li class="nav-item">
-                  <Link class="nav-link text-white" to="/contact">Contact</Link>
+                <li className="nav-item">
+                  <Link className="nav-link text-white" to="/contact">Contact</Link>
                 </li>
               </ul>
             </Row>

@@ -50,13 +50,13 @@ const Home = () => {
 
       <header className='bg-img'>
         <code>
-          <h1 className='text-white text-center' style={{paddingTop: '235px', textShadow: '1px 2px #000'}}>
+          <h1 className='text-white text-center' style={{position: 'absolute', bottom: "30%", left: '35%', textShadow: '1px 2px #000'}}>
             Go beyond the {text} 
             <Cursor cursorStyle="_" />
           </h1>
         </code>
         
-        <div className="col-md-6 m-auto mt-5 pt-2">
+        <div className="col-md-6 m-auto mt-5 pt-5" style={{position: 'absolute', bottom: "15%", left: '25%'}}>
           <small className="form-text text-white">Search our small group tours.</small>
           <div className="input-group mb-2">
             <input type="text" className="form-control py-2" style={{width: "35%"}} placeholder="Search..." />
