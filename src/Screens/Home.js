@@ -5,8 +5,9 @@ import { useTypewriter, Cursor} from 'react-simple-typewriter'
 import {Container, Row, Col} from 'react-bootstrap'
 
 import {FaInstagram} from 'react-icons/fa'
-import {AiOutlineArrowRight, AiOutlineSearch} from 'react-icons/ai'
+import {AiOutlineArrowRight} from 'react-icons/ai'
 import {BiDownArrowAlt} from 'react-icons/bi'
+import {MdOutlineArrowForwardIos} from 'react-icons/md'
 
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
@@ -69,10 +70,10 @@ const Home = () => {
 
       <section>
         <Container className='bg-light text-muted mt-5'>
-          <h1 style={{fontFamily: 'Open Sans'}} className='display-4 py-3 text-center'>Award-Winning Tours</h1>
+          <h2 style={{fontFamily: 'Open Sans'}} className=' py-3 text-center'>4 REASONS TO CHOOSE CRAICIN</h2>
           <Row className="text-center">
             <Col md={3}>
-              <img src="imgs/icon-van.png" alt="icon-van.png" className='my-3' />
+              <img src="imgs/money-back.png" alt="icon-van.png" className='' />
               <p>Travel in small groups or <a href="#" className='text-success'>private tours</a></p>
             </Col>
             <Col md={3}>
@@ -81,7 +82,7 @@ const Home = () => {
             </Col>
             <Col md={3}>
               <img src="imgs/guaranteed-departures.png" alt="guaranteed-departures.png" />
-              <p>Guaranteed departures: We'll never cancel your tour because of minimum numbers</p>
+              <p>Guaranteed departures: you book, you go</p>
             </Col>
             <Col md={3}>
               <img src="imgs/leaf.png" alt="leaf.png" />
@@ -99,82 +100,154 @@ const Home = () => {
 
 
       <section>
-        <Container className='text-muted ms-auto'>
+        <Container className='ms-auto'>
           <h1 style={{fontFamily: 'Open Sans'}} className='display-5 py-3 text-center'>Where would you like to go?</h1>
           <Row className='mb-4 m-auto'>
-            <div className='col-md-2'></div>
-            <div className='col-md-4 mb-2'>
-              <Link to="/">
-                <img src="imgs/tours/countries_widget2.jpg" className='img-fluid images_shadow' alt="countries_widget2.jpg" />
+          <Col md={3}>
+              <Link to="/tourdetails">
+                <div className="card border-0 bg-light">
+                  <img className="card-img-top" src="imgs/home/iceland.jpg" loading='lazy' style={{height: "275px"}}  alt="IceLand" />
+                  <div className="card-body">
+                      <p className="card-title fw-bold">
+                        Ice Land
+                      </p>
+                  </div>
+                </div>
               </Link>
-            </div>
-            <div className='col-md-4 mb-2'>
-              <Link to="/">
-                <img src="imgs/tours/countries_widget4.jpg" className='img-fluid images_shadow' alt="countries_widget4.jpg" />
-              </Link>
-            </div>
-            <div className='col-md-2'></div>
-          </Row>
-
-          <Row className='mb-4 m-auto'>
-            <div className='col-md-4 mb-2'>
-              <Link to="/">
-                <img src="imgs/tours/countries_widget6.jpg" className='img-fluid images_shadow' alt="countries_widget6.jpg" />
-              </Link>
-            </div>
-            <div className='col-md-4 mb-2'>
-              <Link to="/">
-                <img src="imgs/tours/countries_widget8.jpg" className='img-fluid images_shadow' alt="countries_widget8.jpg" />
-              </Link>
-            </div>
-            <div className='col-md-4 mb-2'>
-              <Link to='/'>
-                <img src="imgs/tours/countries_widget10.jpg" className='img-fluid images_shadow' alt="countries_widget10.jpg" />
-              </Link>
-            </div>
-          </Row>
-          <Row className='m-auto'>
-            <div className='col-md-4 mb-2'>
-              <Link to="/">
-                <img src="imgs/tours/countries_widget14.jpg" className='img-fluid images_shadow' alt="countries_widget12.jpg" />
-              </Link>
-            </div>
-            <div className='col-md-4 mb-2'>
-              <Link to="/">
-                <img src="imgs/tours/countries_widget16.jpg" className='img-fluid images_shadow' alt="countries_widget14.jpg" />
-              </Link>
-            </div>
-            <div className='col-md-4 mb-2'>
-              <Link to="/">
-                <img src="imgs/tours/countries_widget18.jpg" className='img-fluid images_shadow' alt="countries_widget16.jpg" />
-              </Link>
-            </div>
-            <button className='btn btn-outline-success rounded-pill col-md-4 my-4 m-auto'>Explore all our tours</button>
+            </Col>
+            <Col md={3}>
+              <div className="card border-0 bg-light">
+                <img className="card-img-top" src="imgs/home/argentine.jpg" loading='lazy' style={{height: "275px"}} alt="Argentina" />
+                <div className="card-body">
+                  <p className="card-title fw-bold">
+                    Argentina
+                  </p>
+                </div>
+              </div>
+            </Col>
+            <Col md={3}>
+              <div className="card border-0 bg-light">
+                <img className="card-img-top" src="imgs/home/australia.jpg" loading='lazy' style={{height: "275px"}} alt="Australia" />
+                <div className="card-body">
+                  <p className="card-title fw-bold">
+                    Australia
+                  </p>
+                </div>
+              </div>
+            </Col>
+            <Col md={3}>
+              <div className="card border-0 bg-light">
+                <img className="card-img-top" src="imgs/home/mount_nepal.jpg" loading='lazy' style={{height: "275px"}}  alt="Nepal_mountain" />
+                <div className="card-body">
+                  <p className="card-title fw-bold">
+                    Nepal
+                  </p>
+                </div>
+              </div>
+            </Col>
+            <Col md={3}>
+              <div className="card border-0 bg-light">
+                <img className="card-img-top" src="imgs/home/India_taj-mahal.jpg" loading='lazy' style={{height: "275px"}}  alt="" />
+                <div className="card-body">
+                  <p className="card-title fw-bold">
+                    India
+                  </p>
+                </div>
+              </div>
+            </Col>
+            <Col md={3}>
+              <div className="card border-0 bg-light">
+                <img className="card-img-top" src="imgs/home/italy.jpg" loading='lazy' style={{height: "275px"}} alt="Card image cap" />
+                <div className="card-body">
+                  <p className="card-title fw-bold">
+                    Italy
+                  </p>
+                </div>
+              </div>
+            </Col>
+            <Col md={3}>
+              <div className="card border-0 bg-light">
+                <img className="card-img-top" src="imgs/home/sri_lanka.jpeg" loading='lazy' style={{height: "275px"}} alt="Sri Lanka" />
+                <div className="card-body">
+                  <p className="card-title fw-bold">
+                    Sri Lanka
+                  </p>
+                </div>
+              </div>
+            </Col>
+            <Col md={3}>
+              <div className="card bg-light border-0">
+                <img className="card-img-top" src="imgs/home/tanzania_jungle.jpg" loading='lazy' style={{height: "275px"}}  alt="Tanzania_Jungle" />
+                <div className="card-body">
+                    <p className="card-title fw-bold">
+                      Tanzania
+                    </p>
+                </div>
+              </div>
+            </Col>
           </Row>
           <hr className='w-25 hr m-auto mt-4' />
         </Container>
       </section>
 
 
-      <section>
-        <Container className='text-muted'>
-          <h1 style={{fontFamily: 'Open Sans'}} className='display-5 py-3 text-center'>Explore more</h1>
-          <Row className='m-auto'>
-            <div className='col-md-4 mb-2'>
-              <Link to="/">
-                <img src="imgs/tours/countries_widget14.jpg" className='img-fluid images_shadow' alt="countries_widget12.jpg" />
-              </Link>
-            </div>
-            <div className='col-md-4 mb-2'>
-              <Link to="/">
-                <img src="imgs/tours/Covid_homepage_dark.png" className='img-fluid images_shadow' alt="countries_widget14.jpg" />
-              </Link>
-            </div>
-            <div className='col-md-4 mb-2'>
-              <Link to="/">
-                <img src="imgs/tours/countries_widget18.jpg" className='img-fluid images_shadow' alt="countries_widget16.jpg" />
-              </Link>
-            </div>
+      <section className='my-5'>
+        <Container>
+          <h2 className='text-center fw-normal'>EXPLORE MORE</h2>
+          <p className='text-center'>The Insight Difference</p>
+          <Row>
+            <Col md={3}>
+              <div className="card border-0">
+                <img className="card-img-top" src="imgs/home/argentine.jpg" style={{height: "245px"}}  alt="Card image cap" />
+                <div className="card-body bg-primary">
+                    <h6 className="card-title fw-normal text-white p-0 m-0">
+                      <small>UNIQUE INSIGHT EXPERIENCES</small> 
+                      <span className='float-right'>
+                        <MdOutlineArrowForwardIos />
+                      </span>
+                    </h6>
+                </div>
+              </div>
+            </Col>
+            <Col md={3}>
+              <div className="card border-0">
+                <img className="card-img-top" src="imgs/home/australia.jpg" style={{height: "245px"}} alt="Card image cap" />
+                <div className="card-body bg-primary">
+                    <h6 className="card-title fw-normal text-white p-0 m-0">
+                      <small>DELICIOUS AUTHENTIC DINING</small>
+                      <span className='float-right'>
+                        <MdOutlineArrowForwardIos />
+                      </span>
+                    </h6>
+                </div>
+              </div>
+            </Col>
+            <Col md={3}>
+              <div className="card border-0">
+                <img className="card-img-top" src="imgs/home/italy.jpg" style={{height: "245px"}} alt="Card image cap" />
+                <div className="card-body bg-primary">
+                    <h6 className="card-title fw-normal text-white p-0 m-0">
+                      WE MAKE TRAVEL MATTER
+                      <span className='float-right'>
+                        <MdOutlineArrowForwardIos />
+                      </span>
+                    </h6>
+                </div>
+              </div>
+            </Col>
+            <Col md={3}>
+              <div className="card border-0">
+                <img className="card-img-top" src="imgs/home/sri_lanka.jpeg" style={{height: "245px"}}  alt="Card image cap" />
+                <div className="card-body bg-primary">
+                    <h6 className="card-title fw-normal text-white p-0 m-0">
+                      STAY IN STYLE
+                      <span className='float-right'>
+                        <MdOutlineArrowForwardIos />
+                      </span>
+                    </h6>
+                </div>
+              </div>
+            </Col>
           </Row>
         </Container>
       </section>
@@ -182,7 +255,7 @@ const Home = () => {
 
       <section>
         <Container className='my-4'>
-          <h1 style={{fontFamily: 'Open Sans'}} className='display-5 mt-5 mb-3 text-center'>#rabbiestours</h1>
+          <h1 style={{fontFamily: 'Open Sans'}} className='display-5 mt-5 mb-3 text-center'>#Craicintours</h1>
           <Row>
             <Box sx={{ width: 1200, minHeight: 829 }} className='m-auto'>
               <Masonry columns={3} spacing={2}>

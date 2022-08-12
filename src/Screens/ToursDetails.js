@@ -1,6 +1,8 @@
 import React, {useState} from 'react'
 import {useNavigate} from 'react-router-dom'
 
+import SlideShow from '../Components/tourdetails_slider/Slider'
+
 import {Container, Row, Col} from 'react-bootstrap'
 import {FaFacebookF, FaTwitter, FaPinterest} from 'react-icons/fa'
 import {AiOutlineWechat} from 'react-icons/ai'
@@ -36,12 +38,12 @@ const Tours = () => {
 
   return (
     <div>
-      <section className='bg-about-img'>
+      <section className='bg-checkout-img'>
         <code>
           <h1 className='text-white text-center' style={{paddingTop: '200px', textShadow: '1px 2px #000'}}>
             Loch Ness, Glencoe & the Highlands
           </h1>
-          <h5 className='text-center text-dark'><strong>1 day tour</strong></h5>
+          <h5 className='text-center text-white'><strong>1 day tour</strong></h5>
         </code>             
       </section>
 
@@ -50,7 +52,7 @@ const Tours = () => {
             <Container>
                 <Row>
                     <Col md={6}>
-                        SlideSHow...
+                        <SlideShow />
                     </Col>
                     <Col md={6}>
                         <form onSubmit={SaveHandler} className='my-5'>
@@ -139,7 +141,7 @@ const Tours = () => {
         <section>
             <Container>
                 <h5 className='col-md-6 text-muted m-auto my-5 text-center'>A two day escape exploring the majesty of Loch Ness, the Caledonian pine forest, and the stunning scenery of the Cairngorms National Park.</h5>
-                <h6>Tour map</h6>
+                {/* <h6>Tour map</h6> */}
 
                 <div className='bg-light p-5 my-4'>
                     <h5>Highlights</h5>
@@ -168,11 +170,11 @@ const Tours = () => {
                 <p className='mb-5'>So join this tour, relax and let us show you the best of the Scottish Highlands.</p>
 
                 <div>
-                    <h2 className='bg-success p-3 text-center text-white p-0 m-0'>4	reasons to choose Rabbie's</h2>
+                    <h2 className='bg-success p-3 text-center text-white p-0 m-0'>4	reasons to choose Craicin</h2>
                     <div className='bg-light py-5'>
                         <Row className="text-center">
                             <Col md={3}>
-                                <img src="imgs/icon-van.png" alt="icon-van.png" className='mt-4 pt-2' />
+                                <img src="imgs/money-back.png" alt="icon-van.png" />
                                 <p>Travel in small groups or <a href="#" className='text-success'>private tours</a></p>
                             </Col>
                             <Col md={3}>

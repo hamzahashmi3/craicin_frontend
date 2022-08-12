@@ -17,11 +17,11 @@ const AgentsAffiliates = () => {
         <section className='mt-5 mb-5'>
             <Container>
                 <h1 style={{fontFamily: 'Open Sans'}} className='display-5 my-5 text-center text-muted'>Working Together</h1>
-                <h5>Rabbie's Agents Online</h5>
-                <p>If you would like to work with us on an ongoing basis and establish yourself as an online booking agent please contact <a href="#" className='text-success h6'>agent@rabbies.com</a>. <br /> Existing online booking agents Login Here</p>
+                <h5>Craicin Agents Online</h5>
+                <p>If you would like to work with us on an ongoing basis and establish yourself as an online booking agent please contact <a href="#" className='text-success h6'>agent@Craicin.com</a>. <br /> Existing online booking agents Login Here</p>
 
                 <h5>Travel Trade Resources</h5>
-                <p>Access Rabbie's tour photo library and tour itineraries and tariffs. Login Here or apply to use these resources by contacting <a href="#" className='text-success h6'>agent@rabbies.com</a>.</p>
+                <p>Access Craicin tour photo library and tour itineraries and tariffs. Login Here or apply to use these resources by contacting <a href="#" className='text-success h6'>agent@Craicin.com</a>.</p>
 
                 <h5>Affiliate Programme</h5>
                 <p>Join our affiliate programme and earn 5% commission for every confirmed Rabbie’s tour booking generated from your website.</p>

@@ -19,7 +19,7 @@ const Accessible = () => {
             <Container>
                 <h4 className='mt-5'>Introduction</h4>
                 <p>This access statement aims to describe our services.</p>
-                <p>So we can ensure you're comfortable travelling with us, please let us know about any special requirements before you book your trip. You can also ask us about specific itineraries at <a href="mailto:tours@rabbies.com" className='text-success'>tours@rabbies.com</a>.</p>
+                <p>So we can ensure you're comfortable travelling with us, please let us know about any special requirements before you book your trip. You can also ask us about specific itineraries at <a href="mailto:tours@Craicin.com" className='text-success'>tours@Craicin.com</a>.</p>
                 <p>It's essential you give us prior notice if you're bringing a wheelchair, a mobility aid, or need an accessible room.</p>
 
                 <h4>Our Mini-coaches</h4>
@@ -36,7 +36,7 @@ const Accessible = () => {
                 <h4>Check-In</h4>
                 <p>Our departure points have different check-in methods. Please <Link to="#" className='text-success'>contact us</Link> to find out specific information about a departure point.</p>
 
-                <h5>Rabbie's Café</h5>
+                <h5>Craicin Café</h5>
                 <p>The main access to the café has three steps each 140 mm in height and a 1050 mm wide swing door opening inwards. We do not have ramp access. There are no internal steps.</p>
                 <p>Easier access (one step of 120 mm in height) is available through our office entrance round the corner to the left. Please press the buzzer labelled Rabbie’s for assistance (buzzer height 1400 mm). While the office entrance door is 900 mm wide the internal access doors (original features so not something we can change) are 750 mm wide.</p>
                 <p>The interior of the café has a mix of high (1080 mm clearance) and low (680 mm clearance) tables and a variety of fixed and moveable seating. There is space to move furniture around and to accommodate wheelchair users. Please ask the café staff to assist.</p>
@@ -60,7 +60,7 @@ const Accessible = () => {
                 <p>Lifts and elevators are uncommon but may be available in some Hotels. Ground floor rooms are available in many B&Bs and Hotels. If either is essential, please let us know at the time of booking.</p>
                 <p>Any additional mobility and special requirements (dietary, allergy etc.) should be made clear at the time of booking, so we can ensure the most appropriate accommodation is allocated to you.</p>
                 <p>If you’d rather book your own accommodation, please let us know at the time of booking and ensure reservations are made within two miles of the specified overnight town-centre.</p>
-                <p>You can contact rooms@rabbies.com for further information and advice on accommodation.</p>
+                <p>You can contact rooms@Craicin.com for further information and advice on accommodation.</p>
 
                 <h4>Booking a Tour</h4>
                 <p>Our tours can be booked in various ways:</p>

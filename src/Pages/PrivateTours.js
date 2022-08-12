@@ -58,7 +58,7 @@ const PrivateTours = () => {
             <h1 style={{fontFamily: 'Open Sans'}} className='display-5 my-3 text-muted'>Create Your Tour</h1>
             <p>If you want to go on an exclusive trip, you can create a private tour.</p>
             <p>Your vehicle can range from a saloon car to any size of coach, and your guide will be an expert in storytelling and local insights.</p>
-            <p>To arrange your tour, please fill in the form below or email <a href="mailto:explore@rabbies.com" className='text-success'>explore@rabbies.com</a></p>
+            <p>To arrange your tour, please fill in the form below or email <a href="mailto:explore@Craicin.com" className='text-success'>explore@Craicin.com</a></p>
             <p className='my-3'>If you've got any questions about scheduled tours, please <Link to="/contact" className='text-success'>contact us here.</Link></p>
 
             <hr className='w-25 hr m-auto mt-4 mb-4' />
@@ -210,7 +210,7 @@ const PrivateTours = () => {
 
                         <h1>Recaptcha will be here...</h1>
                         <div className={successMsg ? 'alert alert-success': 'd-none'}>{successMsg ? <p>{successMsg}</p> : ''}</div>
-                        <button type="submit" onClick={submitHandler} className="btn btn-outline-success btn-lg">Send</button>
+                        <button type="submit" onClick={submitHandler} className="btn btn-outline-success btn-lg mb-4">Send</button>
                     </form>
 
                 </Col>

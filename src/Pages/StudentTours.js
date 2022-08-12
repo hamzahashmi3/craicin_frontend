@@ -88,7 +88,7 @@ const StudentTours = () => {
 
       <section className='bg-light pb-3'>
         <Container className='text-muted mt-5'>
-          <h1 style={{fontFamily: 'Open Sans'}} className=' pb-3 pt-5 text-center fw-normal'>The Rabbie's experience</h1>
+          <h1 style={{fontFamily: 'Open Sans'}} className=' pb-3 pt-5 text-center fw-normal'>The Craicin experience</h1>
           <Row className="text-center">
             <Col md={3}>
               <img src="imgs/icon-van.png" alt="icon-van.png" className='my-3' />

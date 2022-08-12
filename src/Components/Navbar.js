@@ -45,22 +45,22 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item dropdown">
-                <Link className="nav-link ms-sm-1" to="#">
+                <Link className="nav-link ms-sm-1" to="/">
                   Destinations
                 </Link>
               </li>
               <li className="nav-item dropdown">
-                <Link className="nav-link ms-sm-1" to="#">
+                <Link className="nav-link ms-sm-1" to="/">
                   Ways to travel
                 </Link>
               </li>
               <li className="nav-item dropdown">
-                <Link className="nav-link ms-sm-1" to="#">
+                <Link className="nav-link ms-sm-1" to="/">
                   Deals
                 </Link>
               </li>
               <li className="nav-item dropdown">
-                <Link className="nav-link ms-sm-1" to="#">
+                <Link className="nav-link ms-sm-1" to="/">
                   Purpose
                 </Link>
               </li>
@@ -68,10 +68,10 @@ const Navbar = () => {
             </ul>
             <ul className='navbar-nav ms-auto'>
               <li className='nav-item'>
-                <Link className='nav-link' to="#">About us</Link>
+                <Link className='nav-link' to="/about">About us</Link>
               </li>
               <li className='nav-item'>
-                <Link className='nav-link' to="#">Private Tours</Link>
+                <Link className='nav-link' to="/privatetours">Private Tours</Link>
               </li>
               <li className='nav-item'>
                 <Link className='nav-link' to="#"><AiOutlinePhone /></Link>

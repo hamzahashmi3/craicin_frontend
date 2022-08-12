@@ -39,12 +39,12 @@ const PrivacyCookies = () => {
                         </TabList>
                         </Box>
                         <TabPanel value="1" className='text-muted'>
-                            <h1 style={{fontFamily: 'Open Sans'}} className='display-5 my-3 text-muted'>Rabbie's Privacy Policy and Data Protection</h1>
+                            <h1 style={{fontFamily: 'Open Sans'}} className='display-5 my-3 text-muted'>Craicin Privacy Policy and Data Protection</h1>
                             <h4>We promise to respect your privacy and protect your personal information</h4>
                             <ul>
                                 <li>We will be open and honest about the information we are collecting and what we will do with it.</li>
                                 <li>We will use the information you give us for the purposes described in our Privacy Policy, which include providing you with services you have requested and enhancing your experience with Rabbie’s.</li>
-                                <li>If you would like to stop receiving marketing from us, you can unsubscribe at any time by emailing us at <a href="#" className='text-success'>marketing@rabbies.com</a>. We will, of course, continue to send essential information relating to a tour or service you have purchased to keep you informed about your booking.</li>
+                                <li>If you would like to stop receiving marketing from us, you can unsubscribe at any time by emailing us at <a href="#" className='text-success'>marketing@Craicin.com</a>. We will, of course, continue to send essential information relating to a tour or service you have purchased to keep you informed about your booking.</li>
                                 <li>We promise to collect, store and share your data safely and securely.</li>
                             </ul>
                             <p>You can access our full Privacy Policy <Link to="/privacypolicy" className='text-success'>here</Link> to help you understand how we use your personal information. In it, we explain in more detail the types of personal information we collect, how we collect it, what we may use it for and who we may share it with.</p>
@@ -62,7 +62,7 @@ const PrivacyCookies = () => {
                         </TabPanel>
                         <TabPanel value="2" className='text-muted'>
                             <h1 style={{fontFamily: 'Open Sans'}} className='display-5 my-3 text-muted'>Cookie Policy</h1>
-                            <p>This is the Cookie Policy for Rabbie's, accessible from <Link to="/" className='text-success'>www.rabbies.com</Link></p>
+                            <p>This is the Cookie Policy for Craicin, accessible from <Link to="/" className='text-success'>www.Craicin.com</Link></p>
 
                             <p>If you have any questions regarding our Privacy or Cookie policy, you can send <Link to="/contact" className='text-success'>an email</Link> or a letter to our Privacy Manager, Rabbie’s Tours, 6 Waterloo Place, Edinburgh, EH1 3EG, UK.</p>
 
@@ -106,7 +106,7 @@ const PrivacyCookies = () => {
 
                             <h4>Disabling Cookies</h4>
                             <ul>
-                                <li>You can prevent the setting of cookies by rabbies.com by using our cookie management tool when you first visit our website or by clicking the button below.</li>
+                                <li>You can prevent the setting of cookies by Craicin.com by using our cookie management tool when you first visit our website or by clicking the button below.</li>
                                 <li>There are also several ways you can manage cookies using your web browser, you can.</li>
                                 <li>Delete all cookies.</li>
                                 <li>Block all cookies.</li>

@@ -311,7 +311,7 @@ const Payment = () => {
                 <div className="form-group form-check">
                   <input type="checkbox" className="form-check-input" id="exampleCheck1" />
                   <label className="form-check-label" for="exampleCheck1">
-                    <span className='text-success'>*</span> Check this box to confirm you've read, understood & accept Rabbie's Trail Burners <Link to="#" className='text-success'>Terms & Conditions</Link> of booking.
+                    <span className='text-success'>*</span> Check this box to confirm you've read, understood & accept Craicin Trail Burners <Link to="#" className='text-success'>Terms & Conditions</Link> of booking.
                   </label>
                 </div>
 

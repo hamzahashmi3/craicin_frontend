@@ -62,20 +62,20 @@ const Contact = () => {
             <Row>
                 <Col md={6} className='text-muted'>
                     <h3>Our Location</h3>
-                    <h4 className='fw-light'>Rabbie's Café, Waterloo Place, Edinburgh, EH1 3EG Scotland.</h4>
+                    <h4 className='fw-light'>Craicin Café, Waterloo Place, Edinburgh, EH1 3EG Scotland.</h4>
 
                     <h5 className='fw-normal mt-3'>Opening times:</h5>
                     <p className='mb-1'>Mon - Sat: 7:30 to 16:00</p>
                     <p>Sun: 7:30 to 15:00</p>
 
                     <h4 className='fw-light mb-2'></h4>
-                    <h5 className='fw-normal mt-3'>Phone Rabbie's</h5>
+                    <h5 className='fw-normal mt-3'>Phone Craicin</h5>
                     <p className='mb-0'>Tel: <strong>+44(0) 131 226 3133</strong></p>
                     <p>Mon - Sun: 07:30 - 15:00</p>
 
-                    <h5 className='fw-normal mt-3'>Email Rabbie's</h5>
-                    <p className='mb-0'>Tour enquiries: <a className='text-success h6 fw-normal' href="#">tours@rabbies.com</a></p>
-                    <p>Press enquiries: <a className='text-success h6 fw-normal' href="#">PR@rabbies.com</a></p>
+                    <h5 className='fw-normal mt-3'>Email Craicin</h5>
+                    <p className='mb-0'>Tour enquiries: <a className='text-success h6 fw-normal' href="#">tours@Craicin.com</a></p>
+                    <p>Press enquiries: <a className='text-success h6 fw-normal' href="#">PR@Craicin.com</a></p>
                 </Col>
                 <Col md={6}>
                     <form onSubmit={submitHandler}>

@@ -6,23 +6,23 @@ import { Link } from 'react-router-dom'
 const About = () => {
   return (
     <div>
-      <section className='bg-about-img'>
+      <section className='bg-checkout-img'>
         <code>
-          <h1 className='text-white text-center' style={{paddingTop: '200px', textShadow: '1px 2px #000'}}>
+          <h1 className='text-white text-center' style={{paddingTop: '200px', textShadow: '1px 2px #000', height: "600px !important"}}>
             Our Story
           </h1>
         </code>             
       </section>
 
-
-      <section>
+      <center>Your Youtube Video here....</center>
+      {/* <section>
         <Container>
           <Row className='mx-auto'>
           <h1 style={{fontFamily: 'Open Sans'}} className='display-5 my-5 text-center text-muted'>Our Story</h1>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/_ZT7wr2yWos" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           </Row>
         </Container>
-      </section>
+      </section> */}
 
 
       <section>
@@ -36,7 +36,7 @@ const About = () => {
               <p>And our business model reduces your journey's <a href="#" className='text-success'>environmental impact.</a></p>
               <p>It sounds good, doesn’t it? Find out more about our award-winning experiences below.</p>
             </Col>
-            <img src="imgs/about/bus3.jpg" alt="bus3.jpg" className='mx-auto img-fluid rounded w-75' />
+            <img src="imgs/privatetours/Old_Man_Storr_Skye_2.jpg" alt="bus3.jpg" className='mx-auto img-fluid rounded w-75' />
           </Row>
         </Container>
       </section>
@@ -88,20 +88,20 @@ const About = () => {
             <Col md={4} className='text-muted text-center'>
               <img src="imgs/about/Ally_Palmer_Still_Image.jpg" alt="Ally_Palmer_Still_Image.jpg" className='img-fluid rounded-circle mb-3' />
               <h3>Ally Palmer</h3>
-              <p>Ally's been working for Rabbie's for over 10 years.</p>
+              <p>Ally's been working for Craicin for over 10 years.</p>
               <p>"I love to be at the front. Safe in the knowledge there's a team behind me giving me the support I need, allowing me the freedom to do my thing, my way. Outside of work, my dream is to tour round the world on my bike like Mark Beaumont."</p>
             </Col>
             <Col md={4} className='text-muted text-center'>
               <img src="imgs/about/Franscizka_Guide.jpg" alt="Franscizka_Guide.jpg" className='img-fluid rounded-circle mb-3' />
               <h3>Franziska Droll</h3>
-              <p>Franziska's been working for Rabbie's for over 3 years.</p>
+              <p>Franziska's been working for Craicin for over 3 years.</p>
               <p>"The things I like most about my job are the changes of the seasons, the freedom of my own bus, the joy every new passenger brings to the tour and all the stories Scotland holds in every single corner."</p>
             </Col>
             <Col md={4} className='text-muted text-center'>
               <img src="imgs/about/DRIVER_WEEPET_250_X_250.jpg" alt="DRIVER_WEEPET_250_X_250.jpg" className='img-fluid rounded-circle mb-3' />
               <h3>Peter Falconer</h3>
-              <p>Pete's been working for Rabbie's for over 8 years.</p>
-              <p>“I have worked for Rabbie's for a number of years, I look forward to every season. Being a driver guide is hugely rewarding. Having the opportunity to share our landscape, culture and history with people from around the world. Every day brings something new."</p>
+              <p>Pete's been working for Craicin for over 8 years.</p>
+              <p>“I have worked for Craicin for a number of years, I look forward to every season. Being a driver guide is hugely rewarding. Having the opportunity to share our landscape, culture and history with people from around the world. Every day brings something new."</p>
             </Col>
             <hr className='w-25 hr m-auto mt-4 mb-4' />
             <h5 className='mb-1 fw-normal text-center'>Fancy a career as a driver-guide? We're currently recruiting throughout the UK.</h5>
