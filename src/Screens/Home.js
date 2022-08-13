@@ -50,13 +50,13 @@ const Home = () => {
 
       <header className='bg-img'>
         <code>
-          <h1 className='text-white text-center' style={{position: 'absolute', bottom: "30%", left: '35%', textShadow: '1px 2px #000'}}>
+          <h1 className='text-white text-center  mt-5 typewriter' style={{paddingTop: '100px',textShadow: '1px 2px #000'}}>
             Go beyond the {text} 
             <Cursor cursorStyle="_" />
           </h1>
         </code>
         
-        <div className="col-md-6 m-auto mt-5 pt-5" style={{position: 'absolute', bottom: "15%", left: '25%'}}>
+        <div className="col-md-6 m-auto mt-5 pt-5 search_header">
           <small className="form-text text-white">Search our small group tours.</small>
           <div className="input-group mb-2">
             <input type="text" className="form-control py-2" style={{width: "35%"}} placeholder="Search..." />
@@ -200,12 +200,12 @@ const Home = () => {
               <div className="card border-0">
                 <img className="card-img-top" src="imgs/home/argentine.jpg" style={{height: "245px"}}  alt="Card image cap" />
                 <div className="card-body bg-primary">
-                    <h6 className="card-title fw-normal text-white p-0 m-0">
-                      <small>UNIQUE INSIGHT EXPERIENCES</small> 
-                      <span className='float-right'>
-                        <MdOutlineArrowForwardIos />
-                      </span>
-                    </h6>
+                  <p className="card-title fw-normal text-white m-0 p-0">
+                    <small>UNIQUE INSIGHT EXPERIENCES</small> 
+                    <span className='float-right'>
+                      <MdOutlineArrowForwardIos />
+                    </span>
+                  </p>
                 </div>
               </div>
             </Col>
@@ -213,12 +213,12 @@ const Home = () => {
               <div className="card border-0">
                 <img className="card-img-top" src="imgs/home/australia.jpg" style={{height: "245px"}} alt="Card image cap" />
                 <div className="card-body bg-primary">
-                    <h6 className="card-title fw-normal text-white p-0 m-0">
+                    <p className="card-title fw-normal text-white p-0 m-0">
                       <small>DELICIOUS AUTHENTIC DINING</small>
                       <span className='float-right'>
                         <MdOutlineArrowForwardIos />
                       </span>
-                    </h6>
+                    </p>
                 </div>
               </div>
             </Col>
@@ -226,12 +226,12 @@ const Home = () => {
               <div className="card border-0">
                 <img className="card-img-top" src="imgs/home/italy.jpg" style={{height: "245px"}} alt="Card image cap" />
                 <div className="card-body bg-primary">
-                    <h6 className="card-title fw-normal text-white p-0 m-0">
+                    <p className="card-title fw-normal text-white p-0 m-0">
                       WE MAKE TRAVEL MATTER
                       <span className='float-right'>
                         <MdOutlineArrowForwardIos />
                       </span>
-                    </h6>
+                    </p>
                 </div>
               </div>
             </Col>
@@ -239,12 +239,12 @@ const Home = () => {
               <div className="card border-0">
                 <img className="card-img-top" src="imgs/home/sri_lanka.jpeg" style={{height: "245px"}}  alt="Card image cap" />
                 <div className="card-body bg-primary">
-                    <h6 className="card-title fw-normal text-white p-0 m-0">
+                    <p className="card-title fw-normal text-white p-0 m-0">
                       STAY IN STYLE
                       <span className='float-right'>
                         <MdOutlineArrowForwardIos />
                       </span>
-                    </h6>
+                    </p>
                 </div>
               </div>
             </Col>

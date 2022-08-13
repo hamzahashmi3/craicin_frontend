@@ -3,7 +3,7 @@ body {
   font-family: 'Open Sans', 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
+  
 }
 
 code {
@@ -103,3 +103,19 @@ nav{
     display: none !important;
   }
 }
+
+
+@media only screen and (min-width:1876px){
+  .typewriter{
+    font-size: 75px;
+    position: absolute;
+    bottom: 30%;
+    left: 30%;
+  }
+  .search_header{
+    position: absolute;
+    bottom: 15%;
+    left: 25%;
+  }
+}
+
