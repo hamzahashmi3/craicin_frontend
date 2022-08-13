@@ -17,10 +17,10 @@ const Footer = () => {
             <Row>
               <div className='d-flex'>
                 <Link to="/">
-                  <img src="logo.png" alt="imgs/logo.png" className='img-fluid' style={{width: "125px"}} />
+                  <img src="logo.png" alt="imgs/logo.png" className='img-fluid mt-2 pt-3' style={{width: "125px"}} />
                 </Link>
-                <span className="mt-4 pt-4 text-white justify-content-center"> &copy; copyright 2022 Craicin.Inc.</span>
-                <Link className="nav-link text-white ml-3 mt-5" to="/privacypolicy">Privacy Policy</Link>
+                <span className="mt-4 pt-5 text-white justify-content-center"> &copy; copyright 2022 Craicin.Inc.</span>
+                <Link className="nav-link text-white ml-2 pl-1 mt-5 pt-4" to="/privacypolicy">Privacy Policy</Link>
               </div>
 
               <ul className="nav">
