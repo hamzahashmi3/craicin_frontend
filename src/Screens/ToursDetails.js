@@ -55,7 +55,7 @@ const Tours = () => {
                         <SlideShow />
                     </Col>
                     <Col md={6}>
-                        <form onSubmit={SaveHandler} className='my-5'>
+                        <form onSubmit={SaveHandler} className='mt-5 mb-4'>
                             <Row>
                                 <Col md={6}>
                                     <div className="form-group">
@@ -119,18 +119,12 @@ const Tours = () => {
                         </form>
                         
                         <Row>
-                            <Col md={3}>
-                                <a href='#' className='text-muted h1' target='_blank'><FaTwitter /></a>
-                            </Col>
-                            <Col md={3}>
-                                <a href='#' className='text-muted h1' target='_blank'><FaFacebookF /></a>
-                            </Col>
-                            <Col md={3}>
-                                <a href='#' className='text-muted h1' target='_blank'><FaPinterest /></a>
-                            </Col>
-                            <Col md={3}>
-                                <a href='#' className='text-muted h1' target='_blank'><AiOutlineWechat /></a>
-                            </Col>
+                            <div className='d-flex justify-content-between'>
+                                <a href='#' className='text-muted h1 ' target='_blank'><FaTwitter /></a>
+                                <a href='#' className='text-muted h1 ' target='_blank'><FaFacebookF /></a>
+                                <a href='#' className='text-muted h1 ' target='_blank'><FaPinterest /></a>
+                                <a href='#' className='text-muted h1 ' target='_blank'><AiOutlineWechat /></a>
+                            </div>
                         </Row>
                     </Col>
                 </Row>

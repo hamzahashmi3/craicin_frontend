@@ -85,9 +85,9 @@ const Navbar = () => {
         .btn-flat {
           background-color: transparent;
           color: grey;
-          border-top: 1px solid white;
-          border-left: 1px solid white;
-          border-right: 1px solid white
+          border-top: 1px solid #F8F9FA;
+          border-left: 1px solid #F8F9FA;
+          border-right: 1px solid #F8F9FA;
         }
         .btn-xxl {
           padding: 1rem 1.5rem;
